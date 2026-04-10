@@ -2,11 +2,19 @@ import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { Row, Col, Image, ListGroup, Card, Button } from 'react-bootstrap';
 import Rating from '../components/Rating';
-import subjects from '../subjects';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 const SubjectScreen = () => {
   const { id: subjectId } = useParams();
-  const subject = subjects.find((p) => p._id === subjectId);
+  const [subject,setSubject]=useState({});
+  useEffect(()=>{
+    const fetchSubject = async()=>{
+      const {data} = await axios.get(`/api/subjects/${subjectId}`);
+      setSubject(data);
+    };
+    fetchSubject();
+  },[subjectId]);
 
   return (
     <>

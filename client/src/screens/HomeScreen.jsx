@@ -1,8 +1,17 @@
 import { Row, Col } from 'react-bootstrap';
-import subjects from '../subjects';
 import Subject from '../components/Subject';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 const HomeScreen = () => {
+  const [subjects,setSubjects]=useState([]);
+  useEffect(()=>{
+    const fetchSubjects = async()=>{
+      const {data} = await axios.get('/api/subjects');
+      setSubjects(data);
+    };
+    fetchSubjects();
+  },[]);
   return (
     <>
       <h1>Latest Subjects</h1>

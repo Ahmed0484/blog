@@ -70,7 +70,7 @@ const subjects = [
     title: 'Mobile App Development with Flutter',
     image: '/images/default.jpg',
     content:
-      'Build cross-platform mobile applications using Dart and Flutter’s widget-based architecture.',
+      'Build cross-platform mobile applications using Dart and Flutter’s widget-based architecture. Build cross-platform mobile applications using Dart and Flutter’s widget-based architecture. Build cross-platform mobile applications using Dart and Flutter’s widget-based architecture. Build cross-platform mobile applications using Dart and Flutter’s widget-based architecture. Build cross-platform mobile applications using Dart and Flutter’s widget-based architecture. Build cross-platform mobile applications using Dart and Flutter’s widget-based architecture. Build cross-platform mobile applications using Dart and Flutter’s widget-based architecture. Build cross-platform mobile applications using Dart and Flutter’s widget-based architecture. Build cross-platform mobile applications using Dart and Flutter’s widget-based architecture.',
     writer: 'Youssef',
     category: 'Mobile Development',
     rating: 5,
